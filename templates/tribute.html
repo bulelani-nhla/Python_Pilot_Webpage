@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block title %} <title>Tribute Page</title> {% endblock %}
+{% block section %}
+
+<main id="main">
+<h id="title">Tribute to the South African Jazz Icon</h>
+<hr>
+
+<figure id="img-div"> <img id="image" src="http://www.capitalbop.com/wp-content/uploads/2015/11/Hugh-Masekela-BLACKWHITE.jpg"> <figcaption id="img-caption">A tribute to Bra Hugh Masekela the legend image</figcaption>
+</figure>
+<br>
+<hr>
+<div class="tribute-body">
+<h1>Background</h1>
+<p id="tribute-info">Hugh Ramapolo Masekela (4 April 1939 – 23 January 2018)was a South African trumpeter, flugelhornist, cornetist, singer and composer who was described as "the father of South African jazz". Masekela was known for his jazz compositions and for writing well-known anti-apartheid songs such as "Soweto Blues" and "Bring Him Back Home". He also had a number-one US pop hit in 1968 with his version of "Grazing in the Grass". </p>
+
+<h2>Early life</h2>
+<p id="tribute-info">Hugh Ramapolo Masekela was born in the township of KwaGuqa in Witbank (now called Emalahleni), South Africa, to Thomas Selena Masekela, who was a health inspector and sculptor and his wife, Pauline Bowers Masekela, a social worker. His younger sister Barbara Masekela is a poet, educator and ANC activist. As a child, he began singing and playing piano and was largely raised by his grandmother, who ran an illegal bar for miners. At the age of 14, after seeing the 1950 film Young Man with a Horn (in which Kirk Douglas plays a character modelled on American jazz cornetist Bix Beiderbecke), Masekela took up playing the trumpet. His first trumpet was bought for him from a local music store by Archbishop Trevor Huddleston, the anti-apartheid chaplain at St. Peter's Secondary School now known as St. Martin's School (Rosettenville).
+<br>
+<br>
+Huddleston asked the leader of the then Johannesburg "Native" Municipal Brass Band, Uncle Sauda, to teach Masekela the rudiments of trumpet playing. Masekela quickly mastered the instrument. Soon, some of his schoolmates also became interested in playing instruments, leading to the formation of the Huddleston Jazz Band, South Africa's first youth orchestra. When Louis Armstrong heard of this band from his friend Huddleston he sent one of his own trumpets as a gift for Hugh. By 1956, after leading other ensembles, Masekela joined Alfred Herbert's African Jazz Revue.
+<br>
+<br>
+
+From 1954, Masekela played music that closely reflected his life experience. The agony, conflict, and exploitation faced by South Africa during the 1950s and 1960s inspired and influenced him to make music and also spread political change. He was an artist who in his music vividly portrayed the struggles and sorrows, as well as the joys and passions of his country. His music protested about apartheid, slavery, government; the hardships individuals were living. Masekela reached a large population that also felt oppressed due to the country's situation.
+<br>
+<br>
+
+Following a Manhattan Brothers tour of South Africa in 1958, Masekela wound up in the orchestra of the musical King Kong, written by Todd Matshikiza. King Kong was South Africa's first blockbuster theatrical success, touring the country for a sold-out year with Miriam Makeba and the Manhattan Brothers' Nathan Mdledle in the lead. The musical later went to London's West End for two years.</p>
+</div>
+
+<hr>
+</main>
+
+
+
+
+
+
+
+<style>
+
+
+#img-div {
+  display: grid;
+  background: grey;
+  padding: 12px;
+}
+
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+#title {
+  display: grid;
+  background: none;
+}
+
+#tribute-info {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ padding: 50px;
+}
+
+</style>
+
+{% endblock %}
+

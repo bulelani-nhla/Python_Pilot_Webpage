@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{% block title %}
+	{% endblock %}
+</head>
+<body>
+
+<header>
+<div class="header_base">
+
+	<div style="flex-grow: 0">
+		<img class="logo" src="{{ url_for('static', filename='images/baseball-logo-cool-5.png') }}" width="70" 
+    	 height="70" style="border-radius: 35%;" alt="baseball-logo-cool-5"/>
+		</div>
+
+			<div style="flex-grow: 1">
+				<h100>Turtle Run</h100>
+					</div>   
+						</div>
+
+<div class= "topnav_base">
+	<div><a href="/home" id="nav_link"><button class="nav_but" type="button"><i class="fa fa-home"></i>Home</button></a></div>
+	<div><a href="/home"id="nav_link"><button class="nav_but" type="button">Survey</button></a></div>
+	<div><a href="/home1" id="nav_link"><button class="nav_but" type="button">Tribute</button></a></div>
+</div>
+</header>
+<br>
+<section>
+{% block section %}
+{% endblock %}
+</section>
+<hr>
+<footer class="mainfooter">
+<span class="footer-link">
+<p>For more information on the website visit <a id="tribute-link" href="" target="_blank"> link</a></p>
+</span>
+<span class="footer-copyright">
+  <p>copyright@2022</p>
+</span>
+</footer>
+
+</body>
+</html>
+
+<style type="text/css">
+h {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+   background-color: white;
+  margin: 0;
+}
+
+
+
+	
+/* Style the header----------------------------------------------------------------- */
+
+header {
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  overflow: hidden;
+
+  
+
+}
+
+
+
+.header_base {
+  background-color: #003333;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  font-family: Courier New, Brush Script MT, Garamond, Verdana;
+  font-size: 40px;
+  color: #993300 ;
+  height: 70px;
+
+}
+
+
+/* navigator taskbar -------------------------------------------------------------- */
+
+.topnav_base {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: #CC3300;
+  height:30px;
+}
+
+
+
+/* Style the body ----------------------------------------------------------------- */
+body  {
+  background-color: white;
+}
+
+
+/* Style the footer */
+footer {
+  background-color: white;
+  margin-top: 20px;
+  padding: 0px;
+  color: black ;
+}
+
+
+
+.nav_but {
+  background-color: #555555;
+  border: none;
+  color: yellowgreen;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  height:30px;
+  
+}
+
+
+.nav_but:hover {
+   background-color: #ff9900;
+   color: black;
+}
+
+
+#nav_link {
+	text-decoration: none;
+	color: yellowgreen;
+	font-size: 16px;
+}
+
+#nav_link:hover {
+   background-color: #ff9900;
+   color: black;
+}
+
+
+footer {
+ display: flex;
+ justify-content: space-between;
+}
+
+
+.footer-copyright {
+	float: right;
+}
+
+
+</style>
